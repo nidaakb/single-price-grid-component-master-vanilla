@@ -5,41 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Adding the KARLA font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- We link the reset css that resets all the predefined formats -->
+  <link rel="stylesheet" href="reset-css.css">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
 </head>
 <body>
-  Join our community
+<section class="price-grid"> 
+  <div class="section-join">
+    <h1 class="section-join__header"> Join our community </h1>
 
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+    <p class="section-join__message"> 30-day, hassle-free money back guarantee </p>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <p class="section-join__info"> Gain access to our full library of tutorials along with expert code reviews. 
+      Perfect for any developers who are serious about honing their skills. </p>
+
+  </div>
+
+  <div class="section-subscription">
+    <h2 class="section-subscription__header"> Monthly Subscription </h2>
+
+    <div class="section-subscription__price"><span class="price-amount"> &dollar;29 </span> <span class="price-time"> per month </span> </div>
+  
+    <p class="section-subscription__info"> Full access for less than &dollar;1 a day </p>
+  
+    <a href="" class="section-subscription__signup"> Sign Up </a>
+
+  </div>
+
+  <div class="section-whyus">
+    <h2 class="section-whyus__header"> Why Us </h2>
+
+  <ul class="section-whyus__benefits"> 
+    <li> Tutorials by industry experts </li> 
+    <li> Peer &amp; expert code review </li>
+    <li> Coding exercises </li>
+    <li> Access to our GitHub repos </li>
+    <li> Community forum </li>
+    <li> Flashcard decks </li>
+    <li> New videos every week </li>
+  </ul>  
+  </div>
+
+</section>
 </body>
 </html>
